@@ -23,7 +23,9 @@ const useDimensionsListener = () => {
 
     const listener = Dimensions.addEventListener("change", handleDimensionChange);
     return () => {
-      listener.remove();
+      if (listener) {
+        listener.remove();
+      }
     };
   }, []);
 
