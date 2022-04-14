@@ -12,8 +12,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "coverage": "jest --coverage",
-    "prepare": "bob build"
+    "coverage": "jest --coverage"
   },
   "keywords": [
     "react-native",
